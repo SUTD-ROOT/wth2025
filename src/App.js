@@ -1,7 +1,7 @@
 import Voting from './Voting';
 import Header from './Header';
 import CountdownTimer from './Countdown';
-#testing
+
 function App() {
   const eventDate = new Date('2024-11-29T00:00:00');
   
