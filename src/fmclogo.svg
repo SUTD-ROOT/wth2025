@@ -1,0 +1,11 @@
+import FMC Logo from './Desktop/FMC Logo.jpg';
+
+function MyComponent() {
+  return (
+    <div style={{ display: 'flex', justifyContent: 'flex-start', alignItems: 'center' }}>
+      <img src={FMC Logo} alt="FMC Logo" style={{ position: 'absolute', left: '10px', top: '10px' }} />
+    </div>
+  );
+}
+
+export default MyComponent;
