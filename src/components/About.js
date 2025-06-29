@@ -1,277 +1,128 @@
-import seamless_star4 from './src/seamless_star4'
-import prize_icon from '.src/icons/prize_icon'
-import gold_planet from '.src/icons/gold_planet'
-import plat_planet from '.src/icons/plat_planet'
-import silver_planet from '.src/icons/silver_planet'
-import photo1 from '.src/icons/photo1'
-import footer from './src/Footer'
+import seamless_star4 from '.../seamless_star4'
+import prize_icon from '../icons/prize_icon'
+import gold_planet from '../icons/gold_planet'
+import plat_planet from '../icons/plat_planet'
+import silver_planet from '../icons/silver_planet'
+import skills_icon from '../icons/skills_icon'
+import students_icon from '../icons/students_icon'
+import photo1 from '../icons/photo1'
+import Footer from './components/Footer'
+import Sponsors from './components/sponsor'
 
-const About = () => {
-  <ConfigProvider
-    theme={{
-      components: {
-        Timeline: {
-          colorPrimary: "#FFFFFF",
-          fontFamily: "Be Vietnam",
-          fontSize: "20px",
-        },
-      },
-    }}
-  >
-    ...
-  </ConfigProvider>;
 
-  const items = [
-    {
-      children: (
-        <>
-          <p className="nomargin left-align">
-            <strong>09:00</strong>
-          </p>
-          <p className="nomargin left-align">Registration</p>
-        </>
-      ),
-      color: "#F5D143",
-    },
-    {
-      children: (
-        <>
-          <p className="nomargin left-align">
-            <strong>09:30</strong>
-          </p>
-          <p className="nomargin left-align">Opening Briefing</p>
-        </>
-      ),
-      color: "#F5D143",
-    },
-    {
-      children: (
-        <>
-          <p className="nomargin left-align">
-            <strong>11:15</strong>
-          </p>
-          <p className="nomargin left-align">Lunch</p>
-        </>
-      ),
-      color: "#F5D143",
-    },
-    {
-      children: (
-        <>
-          <p className="nomargin left-align">
-            <strong>13:00</strong>
-          </p>
-          <p className="nomargin left-align">Hacking Begins!</p>
-        </>
-      ),
-      color: "#F5D143",
-    },
-    {
-      children: (
-        <>
-          <p className="nomargin left-align">
-            <strong>18:00</strong>
-          </p>
-          <p className="nomargin left-align">Dinner</p>
-        </>
-      ),
-      color: "#F5D143",
-    },
-    {
-      children: (
-        <>
-          <p className="nomargin left-align">
-            <strong>19:00</strong>
-          </p>
-          <p className="nomargin left-align">Hacking Continues</p>
-        </>
-      ),
-      color: "#F5D143",
-    },
-    {
-      children: (
-        <>
-          <p className="nomargin left-align">
-            <strong>22:00</strong>
-          </p>
-          <p className="nomargin left-align">Close</p>
-        </>
-      ),
-      color: "#F5D143",
-    },
-  ];
+import React from "react";
+import "./LandingPage.css";
 
-  const items1 = [
-    {
-      children: (
-        <>
-          <p className="nomargin left-align">
-            <strong>08:30</strong>
-          </p>
-          <p className="nomargin left-align">Hacking Resumes!</p>
-        </>
-      ),
-      color: "#F5D143",
-    },
-    {
-      children: (
-        <>
-          <p className="nomargin left-align">
-            <strong>12:00</strong>
-          </p>
-          <p className="nomargin left-align">Lunch</p>
-        </>
-      ),
-      color: "#F5D143",
-    },
-    {
-      children: (
-        <>
-          <p className="nomargin left-align">
-            <strong>13:00</strong>
-          </p>
-          <p className="nomargin left-align">Final Stretch</p>
-        </>
-      ),
-      color: "#F5D143",
-    },
-    {
-      children: (
-        <>
-          <p className="nomargin left-align">
-            <strong>14:00</strong>
-          </p>
-          <p className="nomargin left-align">Exhibition & Round 1 Judging</p>
-        </>
-      ),
-      color: "#F5D143",
-    },
-    {
-      children: (
-        <>
-          <p className="nomargin left-align">
-            <strong>17:30</strong>
-          </p>
-          <p className="nomargin left-align">Finale Judging</p>
-        </>
-      ),
-      color: "#F5D143",
-    },
-    {
-      children: (
-        <>
-          <p className="nomargin left-align">
-            <strong>19:45</strong>
-          </p>
-          <p className="nomargin left-align">Dinner</p>
-        </>
-      ),
-      color: "#F5D143",
-    },
-  ];
-
+export const About = () => {
   return (
-    <div className="about">
-      <p className="intro">
-        <strong>WHAT THE HACK</strong> is a hardware and software hackathon held
-        by SUTD. Engineers, creators and designers collaborate in a group of 3 -
-        5 to make innovative solutions to meaningful real-world problems in 2
-        days.
-      </p>
-      <div className="condition">
-        <div className="group">
-          <img className="small" src={group} alt="" />
-          <p>Open to all students</p>
-        </div>
-        <div className="group">
-          <img className="small" src={skill} alt="" />
-          <p>All skills level Welcome</p>
-        </div>
-        <div className="group">
-          <img className="small" src={prize} alt="" />
-          <p>$8800 Prize Pool</p>
-        </div>
-      </div>
-
-      <div className="theme">
-        <p>
-          This year's theme ...
-          <br />
-          <strong className="enlarge">HACK IT UP A NOTCH</strong>
-        </p>
-
-        <p>Judging Theme</p>
-        <div className="problem">
-          <p className="statement">Circular Economy & Sustainable Living</p>
-          <p className="statement">Healthcare & Accessibility</p>
-          <p className="statement">Everyday Automation</p>
-          <p className="statement">Reducing Inequalities</p>
-        </div>
-      </div>
-
-      <p className="lesspadding large">Schedule</p>
-      <div className="timeline">
-        <ConfigProvider
-          theme={{
-            components: {
-              Timeline: {
-                fontSize: 20,
-                dotBorderWidth: 5,
-              },
-            },
-          }}
-        >
-          <div>
-            <p className="large">
-              <u>Day 1</u>
-            </p>
-            <Timeline className="individual" items={items} />
-          </div>
-          <div>
-            <p className="large">
-              <u>Day 2</u>
-            </p>
-            <Timeline className="individual" items={items1} />
-          </div>
-        </ConfigProvider>
-      </div>
-      <p>
-        <strong>Resources Provided</strong>
-      </p>
-      <div className="all">
-        <div className="equipment">
-          <p className="spaceless">Fabrication Lab Equipment</p>
-          <div className="divider left-align">
-            <ul>
-              <li>Electronics Lab</li>
-              <li>Acrylic Benders</li>
-              <li>Drill Press</li>
-            </ul>
-            <ul>
-              <li>Bandsaw</li>
-              <li>3D Printer</li>
-              <li>Laser Cutter</li>
-            </ul>
-          </div>
-        </div>
-        <div className="resources">
-          <div className="hackpack">
-            <p className="spaceless">Hackpack</p>
-            <div className="divider left-align">
-              <ul>
-                <li>ESP32-S3</li>
-                <li>LCD</li>
-                <li>Wires</li>
-              </ul>
-              <ul>
-                <li>Breadboard</li>
-                <li>IR sensor</li>
-                <li>RFID module</li>
-              </ul>
+    <div className="landing-page">
+      {/* About Section */}
+      <section className="about">
+        <div className="about-text">
+          <h2>About us</h2>
+          <p>
+            WHAT THE TECH is a hardware and software hackathon held by SUTD. Students across all disciplines collaborate to solve in 3 days to make innovative solutions for meaningful real-world problems.
+          </p>
+          <div className="about-info">
+            <div className="info-block">
+              <div className="icon-placeholder"><img src={students_icon} alt="Student" className="icon-placeholder" /></div>
+              <p>Open to all students</p>
+            </div>
+            <div className="info-block">
+              <div className="icon-placeholder"><img src={skills_icon} alt="Hand" className="icon-placeholder" /></div>
+              <p>All skill levels welcome</p>
+            </div>
+            <div className="info-block">
+              <div className="icon-placeholder"><img src={prize_icon} alt="Prize" className="icon-placeholder" /></div>
+              <p>$8800 Prize Pool</p>
             </div>
           </div>
         </div>
-      </div>
+        <div className="about-image"><img src={photo1} alt="People" className="about-image" /></div>
+      </section>
+
+      {/* Judging Themes Section */}
+      <section className="themes">
+        <h2>Judging Themes</h2>
+        <div className="theme-grid">
+          <div className="theme blue">CLEAN WATER & SANITATION</div>
+          <div className="theme orange">SLEEP</div>
+          <div className="theme red">AGING POPULATION</div>
+        </div>
+      </section>
+
+      {/* Timeline Section */}
+      <section className="timeline">
+        <h2>Timeline</h2>
+        <div classname="timeline-planet"><img src={silver_planet} alt="Silver Planet" className="timeline-planet"></img></div>
+        <div className="schedule">
+          <div className="day">
+            <h3>19 Sep</h3>
+            <p>5pm – Intro Briefing</p>
+            <p>6pm – Dinner</p>
+            <p>6pm – Close</p>
+          </div>
+          <div className="day">
+            <h3>20 Sep</h3>
+            <p>8am – Room Open</p>
+            <p>9am – FabLab Open</p>
+            <p>5.30pm – FabLab Close</p>
+            <p>10pm – Room Close</p>
+          </div>
+          <div className="day">
+            <h3>21 Sep</h3>
+            <p>8am – Room Open</p>
+            <p>9am – FabLab Open</p>
+            <p>12pm – Judging</p>
+            <p>7pm – Dinner</p>
+            <p>9pm – Closing</p>
+          </div>
+        </div>
+        <div className="planet-image"><img src={plat_planet} alt="Planet" className="planet-image" /></div>
+      </section>
+
+      {/* What to Expect Section */}
+      <section className="expect">
+        <h2>What to Expect</h2>
+        <div className="expect-grid">
+          <div className="expect-box red">
+            <h3>Hackpack</h3>
+            <ul>
+              <li>ESP32</li>
+              <li>USB-C to USB-A</li>
+              <li>Jumper Wires</li>
+              <li>IR Remote</li>
+              <li>IR Receiver</li>
+              <li>...others</li>
+            </ul>
+            <p>Hackpacks can be collected during the hackathon!</p>
+          </div>
+          <div className="expect-box orange">
+            <h3>Workshops</h3>
+            <p>...the</p>
+            <p>...</p>
+          </div>
+          <div className="expect-box yellow">
+            <h3>Fablab</h3>
+            <ul>
+              <li>Exciting tools & devices</li>
+              <li>Arduino Kits</li>
+              <li>Laser Cutter</li>
+              <li>3D Printer</li>
+            </ul>
+            <p>Consult staff for any assistance!</p>
+          </div>
+          <div className="expect-box blue">
+            <h3>Prizes</h3>
+            <ul>
+              <li>1st Place: $2000</li>
+              <li>2nd Place: $1000</li>
+              <li>3rd Place: $500</li>
+            </ul>
+            <p>Finalists from each theme can win prizes by presenting to judging panel!</p>
+          </div>
+        </div>
+      </section>
 
       <Sponsors />
 
@@ -279,5 +130,3 @@ const About = () => {
     </div>
   );
 };
-
-export default About;
