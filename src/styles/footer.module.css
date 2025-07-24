@@ -1,9 +1,11 @@
 .footerWrapper {
     width: 100vw;
     padding: 0 18px 0 18px;
-    padding-bottom: 10px;
+    margin-bottom: 0rem;
     box-sizing: border-box;
-    margin-top: 50px;
+    margin-top: 100px;
+    z-index: 2;
+    height:auto;
   }
   
   .footerContainer {
@@ -12,16 +14,36 @@
     align-items: center;
     text-align: left;
     width: 100%;
+    position: relative;
+    margin-top: 80rem;
+  }
+
+  .footerWrapper2 {
+    width: 100vw;
+    box-sizing: border-box;
+    padding-top:0rem;
+    z-index: 2;
+    padding-bottom: 0rem;
+  }
+
+  .footerContainer2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    width: 100%;
+    position: relative;
+    margin-top: 3rem;
   }
   
   .footerImg {
-    margin-bottom: 0.5rem;
     width: 24vw;
   }
   
   .footerLabel {
     font-size: 0.8rem;
     margin: 0 0 0.5rem 0;
+    color: white;
   }
   
   .linkWrapper {

@@ -1,4 +1,5 @@
-import { FaChevronUp } from 'react-icons/fa6';
+/*import FaChevronUp from '../icons/skills_icon.png';*/
+import ChevronUp from '../icons/Chevron Up.png'
 
 const scrollbtn = ({top}) => {
 
@@ -8,7 +9,7 @@ const scrollbtn = ({top}) => {
     }
     return ( 
         <div className="scroll" onClick={() => scrollup()} style={styles.scrollBtn}>
-                <FaChevronUp/>
+           
         </div>
      );
 }

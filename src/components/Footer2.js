@@ -1,10 +1,10 @@
-/*import InstagramFilled from "../logo.svg";*/
-import logo from "../logo.svg";
 import styles from "../styles/footer.module.css"
+import bottom_water from "../bottom_water 4.svg"
+import logo from "../logo.svg"
 const Footer = () => {
   return (
-    <div className={styles.footerWrapper}>
-      <div className={styles.footerContainer}>
+    <div className={styles.footerWrapper2}>
+      <div className={styles.footerContainer2}>
         <img src={logo} alt="logo" className={styles.footerImg} />
         <label className={styles.footerLabel}>
           Copyright © 2025 What The Hack. All rights reserved.
@@ -33,6 +33,7 @@ const Footer = () => {
           </a>
         </div>
       </div>
+      <img className="bottom2 middle" src={bottom_water} alt="Bottom" />
     </div>
   );
 };

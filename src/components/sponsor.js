@@ -1,9 +1,13 @@
-const sponsor = () => {
+import bottom from "../bottom.svg";
+
+const Sponsor = () => {
     return (
-       <div>
-      <p className="Title4">Special Thanks to our sponsors</p>
-       </div>
+        <div className= "sponsor">
+            <div className="sponsor-header"> Special Thanks to our sponsors</div>
+            <img className="bottom-image" src={bottom} alt="Bottom" />
+        </div>
+      
     );
 }
  
-export default sponsor;
+export default Sponsor;

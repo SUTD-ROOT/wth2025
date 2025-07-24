@@ -1,13 +1,14 @@
 import './index.css';
 import About from './components/About';
 import { BrowserRouter as Router, Route, Routes} from "react-router-dom"
-import Banner from './components/banner';
+import Banner from './components/Banner';
 import Faq from './components/Faq';
 import Past from './components/Past_Winners';
+import Contact from './components/Contact'
 import Scrollbtn from './components/scrollbtn';
 import { useRef, useState } from 'react';
-import background1 from './bacground1.svg'
 import Navbar from './components/Navbar';
+
 
 function App() {
 
@@ -34,18 +35,20 @@ function App() {
 }
 
   return (
-        <div className="App" ref={top}>
+      <div className="App" ref={top}>
           <Navbar ref={offset} className="stay" {...{handleScroll}} />
-          <Banner><img src={background1} alt="Solar System" className="background1" /></Banner>
+          <Banner></Banner>
           <div  ref={up} className='startingpoint'></div>
           <Scrollbtn {...{top}}/>
           <div>
             {activeComponent === 'about' && <About />} 
             {activeComponent === 'past' && <Past />}  
             {activeComponent === 'faq' && <Faq />}
-            {activeComponent === 'contact us' && <Faq />}   
+            {activeComponent === 'contact us' && <Contact />}  
           </div>
-        </div>   
+      </div>  
+  
+         
   );
 }
 

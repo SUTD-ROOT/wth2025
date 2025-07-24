@@ -17,7 +17,22 @@
 
 @font-face {
   font-family: 'Bernoru-BlackUltra_Expanded';
-  src: url('/fonts/Bernoru-BlackUltra_Expanded.woff2') format('woff2');
+  src: url('../public/bernoru-blackultraexpanded.otf');
+
+}
+
+
+@font-face {
+  font-family: 'Inter';
+  font-stretch: PERCENTAGE_RANGE_LOW_TO_HIGH; /* Note that font-stretch is a % of normal width */
+  font-weight: NUMERIC_RANGE_LOW_TO_HIGH;
+  src: url('../public/Inter-VariableFont_opsz\,wght.ttf') format('woff2');
+}
+
+@font-face {
+  font-family: 'Be Vietnam';
+  src: url('../public/BeVietnamPro-Medium.ttf');
+
 }
 
 .background1 {
@@ -30,11 +45,50 @@
   background: #FEDD5C;
   padding: 10px;
   cursor: pointer;
+  color:#000000;
+  font-weight: 600;
+  letter-spacing:0.4px;
 }
 
 .contact-button a:hover {
-  color: #EFDD94;
+  color: #e36158;
 }
+
+.contact-us{
+   display: flex;
+   flex-wrap: wrap;
+   gap:1rem;
+   padding: 3rem 0;
+   width: 100%;
+   align-items: flex-start;
+   padding-bottom:0rem;
+}
+
+.ask{
+  padding: 20px;
+  padding-left: 6rem;
+  flex: 1 1 300px;
+  margin-top: 5rem;
+}
+
+.Ask-body{
+  font-family: Be Vietnam;
+  font-size:20px;
+  color: white;
+}
+
+.Ask-header{
+  font-family: Neuething Sans Test;
+  color: white;
+  font-size: 30px;
+  font-weight:800;
+  margin-bottom: 2rem
+}
+
+.rocket{
+  margin-top: -4rem
+}
+
 
 body {
   margin: 0;
@@ -46,23 +100,22 @@ body {
   font-size: 20px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url('./background.svg')
 }
 
 .Title {
   display: flex;
   width: 347px;
-  height: 275px;
+  height: 130px;
   flex-direction: column;
   justify-content: center;
   flex-shrink: 0;
   color: #FFF;
   text-shadow: 4px 4px 0px rgba(0, 0, 0, 0.25);
-  font-family: Bernoru;
-  font-size: 64px;
+  font-size: 60px;
   font-style: normal;
   font-weight: 900;
   line-height: normal;
+  font-family:Bernoru-BlackUltra_Expanded;
 }
 
 .Title2 {
@@ -78,12 +131,14 @@ body {
   font-style: italic;
   font-weight: 600;
   line-height: normal;
+  position: absolute;
+  top: 200px;
 }
 
 .Title3 {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: right;
   flex-shrink: 0;
   width: 482px;
   color: #FEDD5C;
@@ -92,16 +147,37 @@ body {
   font-style: normal;
   font-weight: 800;
   line-height: normal;
+  position: absolute;
+  top: 300px;
 }
 
 .Title4 {
-  color: #FFF;
-  text-align: center;
-  font-family: Bernoru;
-  font-size: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  flex-shrink: 0;
+  width: 482px;
+  color: #FEDD5C;
+  font-family: "Be Vietnam";
+  font-size: 20px;
   font-style: normal;
-  font-weight: 900;
+  font-weight: 800;
   line-height: normal;
+  position: absolute;
+  top: 350px;
+}
+
+.Title5 a{
+  font-family: Be Vietnam;
+  border-radius: 25px;
+  background: #FEDD5C;
+  padding: 15px 40px 15px 40px;
+  cursor: pointer;
+  color:#000000 !important;
+  text-align: center;
+  position: relative;
+  top: 260px;
+  text-decoration: none;
 }
 
 strong{
@@ -118,13 +194,18 @@ code {
   z-index: 3;
   display: flex;
   justify-content: space-between;
-  font-weight: 800;
+  font-weight: 500;
+  letter-spacing: 1px;
   padding: 20px;
   top: 0px;
-  background: var(--main-backgroundcolor);
-  position: sticky;
+  background: rgba(61,22,151,1);
+  position: fixed;
   width: 100%;
   box-sizing: border-box;
+  color:#FFF;
+  font-family:Inter;
+  font-size: 20px
+
 }
 
 .header p{
@@ -156,7 +237,7 @@ a:active {color: var(--theme-purple)}
 
 .right{
   display: flex;
-  gap: 20px;
+  gap: 40px;
   align-items: center;
 }
 
@@ -165,12 +246,12 @@ a:active {color: var(--theme-purple)}
 }
 
 .right a{
-  color: #000000;
+  color: #FFFFFF;
   text-decoration: none;
 }
 
 .right a:active{
-  color: #000000;
+  color: #FFFFFF;
 }
 
 .banner-details{
@@ -181,23 +262,212 @@ a:active {color: var(--theme-purple)}
   display: flex;
   flex-direction: column;
   align-items: center;
+  
 }
 
 .banner-image{
-  width: 100%;
+  width: 60%;
   display: flex;
   flex-direction: row;
   gap: 2%;
   justify-content: center;
+  width: 1440px;
+  height: 810px;
+  flex-shrink: 0;
+}
+
+.overlay-text{
+  position: absolute;
+  top: 50%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+
+.frame-container {
+  background-color: #3d1697;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.frame-card {
+  width: 100%;
+  max-width: 1440px;
+  border: 0;
+  border-radius: 0;
+  overflow: hidden;
+}
+
+.frame-card-content {
+  padding: 0;
+}
+
+
+
+.frame-title {
+  position: absolute;
+  width: 347px;
+  top: 178px;
+  left: 848px;
+  text-shadow: 4px 4px 0px #00000040;
+  font-family: 'Bernoru-BlackUltra_Expanded', Helvetica, sans-serif;
+  font-weight: 900;
+  color: white;
+  font-size: 64px;
+  line-height: 1.1;
+}
+
+.frame-subtitle {
+  position: absolute;
+  width: 490px;
+  top: 457px;
+  left: 848px;
+  font-family: 'Inter-SemiBold_Italic', Helvetica, sans-serif;
+  font-weight: 600;
+  font-style: italic;
+  color: #fedd5c;
+  font-size: 32px;
+  line-height: normal;
+}
+
+.frame-details {
+  position: absolute;
+  width: 482px;
+  top: 548px;
+  left: 848px;
+  font-family: 'Be_Vietnam-ExtraBold', Helvetica, sans-serif;
+  font-weight: 800;
+  color: #fedd5c;
+  font-size: 20px;
+  line-height: normal;
 }
 
 .logo{
-  width: 110px;
+  width: 50px;
 }
 
 .banner_logo{
-    width: 50%;
+  top: 0;
+  left: 0;
+  right:0;   /* 100% of the viewport width */  /* 100% of the viewport height */
+  object-fit: cover;
+  background-color: #3D1697
 }
+
+.banner{
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  
+}
+
+.winners-text{
+  padding-left:5rem;
+  padding-top: 8rem;
+  flex: 1;
+  min-width: 300px; 
+}
+
+.winners-intro{
+  color:white;
+  font-family: Neuething Sans Test;
+  font-size: 30px;
+}
+
+.wth2024{
+  color:white;
+  font-family: Neuething Sans Test;
+  font-size: 25px;
+}
+
+.winners-details{
+  height:auto
+}
+
+.See a{
+  font-family: Be Vietnam;
+  border-radius: 25px;
+  background: #FEDD5C;
+  color:#000000 !important;
+  padding: 15px 15px 15px 15px;
+  cursor: pointer;
+  text-align: center;
+  width:10%;
+  text-decoration:none
+}
+
+.winners p{
+  margin-right: 5rem;
+  width: 80%;
+}
+
+.winners{
+  display: flex;
+  flex-wrap: wrap; /* Makes it responsive */
+  gap: 2rem;
+  align-items: flex-start;
+  padding: 2rem;
+}
+.winner-image{
+  display: flex;
+  margin-left: 20rem;
+  position:relative;
+  width: 250px;
+  height: auto;
+  flex: 1 1 35%;
+  max-width: 300px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1)
+}
+
+.text-column{
+  flex: 4;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.image-column {
+  flex: auto;
+  display: flex;
+  gap: 6rem;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  flex-direction: row;
+}
+
+.economy-image{
+  gap: 1rem;
+  width: 250px;           /* Fixed width */
+  height: auto;           /* Maintain aspect ratio */
+  border-radius: 8px;
+  object-fit: cover; 
+
+}
+
+.winnerimage{
+  gap: 1rem;
+  width: 400px;           /* Fixed width */
+  height: auto;           /* Maintain aspect ratio */
+  border-radius: 8px;
+  object-fit: cover;
+}
+
 
 .other{
   width: 50%;
@@ -241,19 +511,32 @@ a:active {color: var(--theme-purple)}
   font-size: 25px;
 }
 
-.about, .prizes, .past, .faq{
-  margin-top: 60px;
+.prizes, .past, .about{
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: linear-gradient(var(--main-backgroundcolor), var(--seecond-backgroundcolor));
 }
 
 .sponsor{
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
+  top: 250px;
+  z-index: 0;
+  margin-bottom: 0rem;
+  padding-bottom: 0rem;
 }
+
+.sponsor-header {
+  font-family:Bernoru-BlackUltra_Expanded ;
+  font-size: 30px;
+  color:white;
+  position: relative;
+  margin-top: 380px;
+  z-index: 3;
+}
+
 
 .past{
   background-image: none;
@@ -294,12 +577,7 @@ a:active {color: var(--theme-purple)}
   margin: 0px;
 }
 
-.timeline{
-  width: 80%;
-  justify-content: center;
-  display: flex;
-  gap: 15%;
-}
+
 
 .left-align{
   display: flex;
@@ -326,6 +604,19 @@ a:active {color: var(--theme-purple)}
   width: 100%;
   margin: 50px 0px;
   z-index: -1;
+}
+
+.bottom2 {
+  width: 100%;
+  z-index: -1;
+}
+
+.bottom-image {
+  position: absolute;
+  width: 100vw;
+  height: auto;
+  z-index: -1;
+  margin-top: -175px;
 }
 
 .bottomdivider{
@@ -471,15 +762,36 @@ a:active {color: var(--theme-purple)}
 }
 
 .question{
-  width: 65%;
+  width: 100%;
   overflow-x: hidden;
+  color:white;
+  font-family: Be Vietnam
 }
 
 .faqtitle{
   display: flex;
   justify-content: space-evenly;
   padding: 0px;
+  font-family:Neuething Sans Test;
 }
+
+.faq-text{
+  margin-top: 6rem;
+  color:white;
+  font-family: Neuething Sans Test;
+  font-size: 30px;
+  padding-left: 4rem
+}
+
+.faq{
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  height:auto;
+  padding-right: 4rem
+}
+
+
 
 .carousel{
   padding: 0px 40px;
@@ -487,9 +799,10 @@ a:active {color: var(--theme-purple)}
 
 .collapse{
   margin-top: 10px;
-  font-family: peridot pe variable;
+  font-family: Be Vietnam;
   border: 2px solid;
   font-size: 20px;
+  border: 1px solid black;
 }
 
 .hidden{
@@ -501,17 +814,17 @@ a:active {color: var(--theme-purple)}
 }
 
 .contact{
-  width: 35%;
-  padding-top: 20px;
-  padding: 20px;
-  border-radius: 20px;
-  background-color: rgba(255, 255, 255, 0.5);
+  flex: 1 2 150px;
+  padding-right: 3rem;
+  padding-left: 3rem;
+  margin-top: 5rem;
 }
 
 .individual, .input, .submit{
-  font-family: peridot pe variable;
+  font-family: Be Vietnam;
   font-size: 20px;
 }
+
 
 .submit{
   width: 30%;
@@ -617,17 +930,20 @@ button{
 
 .ant-input, .ant-btn, .ant-tabs, .input input, .input textarea, .ant-modal, .ant-modal-body{
   font-size: 20px;
-  font-family: peridot pe variable;
+  font-family: Be Vietnam;
+
 }
 
-.ant-btn-default{
-  display: none;
-}
 
 .form, .input{
   display: flex;
   flex-direction: column;
   text-align: left;
+  padding: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 20px;
+  background-color: #FEDD5C;
 }
 
 .input{
@@ -639,8 +955,14 @@ button{
   width: 15%;
 }
 
-.hide{
-  display: none;
+.hide a{
+  border-radius: 25px;
+  background: #FEDD5C;
+  padding: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  color:#000000 !important;
+  letter-spacing:0.4px;
 }
 
 .startingpoint{
