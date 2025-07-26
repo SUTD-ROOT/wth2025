@@ -7,7 +7,7 @@ import skills_icon from '../icons/skills_icon.png'
 import students_icon from '../icons/students_icon.png'
 import photo1 from '../icons/photo1.png'
 import Footer from './Footer'
-import Sponsor from './Sponsor'
+import Sponsor from './sponsor'
 import React from "react";
 import "../LandingPage.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
