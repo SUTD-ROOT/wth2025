@@ -1,7 +1,7 @@
 import './index.css';
 import About from './components/About';
 import { BrowserRouter as Router, Route, Routes} from "react-router-dom"
-import Banner from './components/Banner';
+import Banner from './components/banner';
 import Faq from './components/Faq';
 import Past from './components/Past_Winners';
 import Contact from './components/Contact'
