@@ -77,7 +77,7 @@ const FAQ = () => {
     const registration = [{
         key: '1',
         label: "When is the registration deadline?",
-        children: <p>14th July 2025 at 2359 hours!</p>,
+        children: <p>13th August 2025 at 2359 hours!</p>,
     },
     {
         key: '2',
