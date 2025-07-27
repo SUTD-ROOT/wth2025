@@ -11,7 +11,7 @@
   --gold:#B59410;
   --silver: #71706E;
   --bronze:#CD7F32;
-
+  height: 100vh;
 
 }
 
@@ -103,15 +103,9 @@ body {
 }
 
 .Title {
-  display: flex;
-  width: 347px;
-  height: 130px;
-  flex-direction: column;
-  justify-content: center;
-  flex-shrink: 0;
   color: #FFF;
   text-shadow: 4px 4px 0px rgba(0, 0, 0, 0.25);
-  font-size: 60px;
+  font-size: 4vw;
   font-style: normal;
   font-weight: 900;
   line-height: normal;
@@ -119,19 +113,17 @@ body {
 }
 
 .Title2 {
-  display: flex;
-  width: 490px;
-  height: 91px;
+  display: flex;;
   flex-direction: column;
   justify-content: center;
   flex-shrink: 0;
   color: #FEDD5C;
   font-family: Inter;
-  font-size: 32px;
+  font-size: 2.2vw;
   font-style: italic;
   font-weight: 600;
   line-height: normal;
-  position: absolute;
+
   top: 200px;
 }
 
@@ -140,14 +132,13 @@ body {
   flex-direction: column;
   justify-content: right;
   flex-shrink: 0;
-  width: 482px;
   color: #FEDD5C;
   font-family: "Be Vietnam";
-  font-size: 20px;
+  font-size: 1.3vw;
   font-style: normal;
   font-weight: 800;
   line-height: normal;
-  position: absolute;
+
   top: 300px;
 }
 
@@ -163,7 +154,6 @@ body {
   font-style: normal;
   font-weight: 800;
   line-height: normal;
-  position: absolute;
   top: 350px;
 }
 
@@ -266,13 +256,11 @@ a:active {color: var(--theme-purple)}
 }
 
 .banner-image{
-  width: 60%;
+  width: 100%;
   display: flex;
   flex-direction: row;
   gap: 2%;
   justify-content: center;
-  width: 1440px;
-  height: 810px;
   flex-shrink: 0;
 }
 
@@ -361,6 +349,7 @@ a:active {color: var(--theme-purple)}
   left: 0;
   right:0;   /* 100% of the viewport width */  /* 100% of the viewport height */
   object-fit: cover;
+  width: 100%;
   background-color: #3D1697
 }
 
@@ -518,22 +507,24 @@ a:active {color: var(--theme-purple)}
 }
 
 .sponsor{
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   position: relative;
-  top: 250px;
+  margin-top: 40vh;
   z-index: 0;
   margin-bottom: 0rem;
   padding-bottom: 0rem;
+  box-sizing: border-box;
 }
 
 .sponsor-header {
   font-family:Bernoru-BlackUltra_Expanded ;
-  font-size: 30px;
+  font-size: 2vw;
   color:white;
   position: relative;
-  margin-top: 380px;
+  margin-top: 15vw;
   z-index: 3;
 }
 

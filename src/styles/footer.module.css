@@ -2,7 +2,6 @@
     width: 100vw;
     padding: 0 18px 0 18px;
     margin-bottom: 0rem;
-    box-sizing: border-box;
     margin-top: 100px;
     z-index: 2;
     height:auto;
@@ -15,12 +14,11 @@
     text-align: left;
     width: 100%;
     position: relative;
-    margin-top: 80rem;
+    margin-top: 90vw;
   }
 
   .footerWrapper2 {
     width: 100vw;
-    box-sizing: border-box;
     padding-top:0rem;
     z-index: 2;
     padding-bottom: 0rem;
