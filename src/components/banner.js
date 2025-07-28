@@ -3,7 +3,7 @@ import background1 from '../background1.svg';
 const Banner = () => {
 return (
   <div>
-    <div classname='banner'>
+    <div classname='banner' style={{ position: 'relative' }}>
       <div className='banner-image'>
         <img className='banner_logo' src={background1} alt="banner" />
       </div>

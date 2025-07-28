@@ -96,7 +96,7 @@ export const About = () => {
       </section>
 
       {/* Timeline Section */}
-      <section className="timelime">
+      <section className="timeline">
         <div className= "timeline-header"> Timeline </div>
         <div className= "plat-planet"><img src={plat_planet} alt="planet" className= "plat-planet" /></div>
         <div className="schedule">
@@ -168,13 +168,16 @@ export const About = () => {
               <li>1st Place: $2000</li>
               <li>2nd Place: $1000</li>
               <li>3rd Place: $500</li>
-              <p>Wildcard Prizes:</p>
-              <p>Most Electrifying Hack</p>
-              <p>Hack of Art</p>
-              <p>Big Brain Hack</p>
-              <p>Heartware Hack</p>
             </ul>
             <h4>Cash Prizes can be won by teams for one judging theme!</h4>
+             <h3 style={{marginTop:"30px",fontSize:"2vw",textAlign:"center"}}>Wildcard Prizes</h3>
+            <ul>
+              <li>Most Electrifying Hack: Shouldering Kit</li>
+              <li>Hack of Art: 3D Printing Pen</li>
+              <li>Big Brain Hack: Mystery Prize</li>
+              <li>Heartware Hack: Polaroid Camera</li>
+            </ul>
+            <h4>Additional Prizes to be WON!</h4>
           </div>
         </div>
       </section>
