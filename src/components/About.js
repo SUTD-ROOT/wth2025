@@ -53,6 +53,7 @@ export const About = () => {
   return (
     <div className="landing-page" style={{background: `url(${seamlessStar}), linear-gradient(to bottom, #3d1697, #0f35be)`,backgroundSize: 'auto'}}>
       {/* About Section */}
+      <div className= "gold-planet"><img src={gold_planet} alt="planet" className= "silver-planet" /></div>
       <section className="about">
         <div className="about-text">
           <h2>About us</h2>
