@@ -258,7 +258,7 @@ a:active {color: var(--theme-purple)}
 }
 
 .banner-image{
-  margin-top: 10vh;
+  margin-top: 8vh;
   width: 100%;
   display: flex;
   flex-direction: row;
