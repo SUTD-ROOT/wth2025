@@ -137,47 +137,70 @@ export const About = () => {
             <h3>Workshops</h3>
             <h4>Intro to FabLab Equipment and 3D Modelling </h4>
             <ul>
-              <li>Date TBC</li>
+              <li>29 August 2025</li>
               <li>Timing TBC</li>
               <li>Location at SUTD Campus Building, exact location will be informed.</li>
-              <li>This workshop is for students with no experience building circuits. Participants will learn creating basic circuits with the ESP32-S3 along with writing code to control electronic components. Participants will learn the basics of BLE as well as the ESP-NOW wireless protocol.</li>
+              <li>This workshop is for students to see the equipments provided and learn 3D modelling for their prototype.</li>
             </ul>
             <h4>ESP32 Basics and Wireless Communication for Absolute Beginners  </h4>
             <ul>
-              <li>Date TBC</li>
+              <li>29 August 2025</li>
               <li>Timing TBC</li>
               <li>Location at SUTD Campus Building, exact location will be informed.</li>
               <li>This workshop is for participants with some experience building circuits. Signups will be with confirmation form and each workshop is limited to 50 pax. Selected participants will be informed.</li>
             </ul>
+           
           </div>
           <div className="expect-box yellow">
             <h3>Fablab</h3>
             <ul>
               <li>Electronics Lab</li>
+              <ul>
+                <li>Soldering Station</li>
+                <li>Wire Stripper</li>
+                <li>Voltage Meter</li>
+              </ul>
               <li>Acrylic Benders</li>
               <li>Drill Press</li>
               <li>Bandsaw</li>
               <li>3D Printer</li>
               <li>Laser Cutter</li>
+              <li>Tools</li>
+              <ul>
+                <li>Screw Driver</li>
+                <li>Pen Knife</li>
+                <li>Clamper</li>
+                <li>Pilers</li>
+              </ul>
+              <li>And more...</li>
             </ul>
-            <h4>Consult our staff for any assistance!</h4>
+            <h4>Consult our staff or team for any assistance!</h4>
+            <p></p>
+            <h4 style={{textDecoration: "underline"}}>**Non-SUTD students would need to ask our student helper to help with the machinery**</h4>
           </div>
           <div className="expect-box blue">
             <h3>Prizes</h3>
             <ul>
-              <li>1st Place: $2000</li>
-              <li>2nd Place: $1000</li>
-              <li>3rd Place: $500</li>
+              <li>1st Place:</li>
+              <ul><strong>$2000 Cash Prize</strong></ul>
+              <li>2nd Place:</li>
+              <ul><strong>$1000 Cash Prize</strong></ul>
+              <li>3rd Place:</li>
+              <ul><strong>$500 Cash Prize</strong></ul>
             </ul>
-            <h4>Cash Prizes can be won by teams for one judging theme!</h4>
+            <h4>Top 3 prizes can be won by teams for each judging theme!</h4>
              <h3 style={{marginTop:"30px",fontSize:"2vw",textAlign:"center"}}>Wildcard Prizes</h3>
             <ul>
-              <li>Most Electrifying Hack: Shouldering Kit</li>
-              <li>Hack of Art: 3D Printing Pen</li>
+              <li>Most Electrifying Hack:</li>
+              <ul><strong>Soldering Kit</strong></ul>
+              <li>Hack of Art: </li>
+              <ul><strong>3D Printing Pen</strong></ul>
               <li>Big Brain Hack: Mystery Prize</li>
-              <li>Heartware Hack: Polaroid Camera</li>
+              <ul><strong>Mystery Prize</strong></ul>
+              <li>Heartware Hack: </li>
+              <ul><strong>Polaroid Camera</strong></ul>
             </ul>
-            <h4>Additional Prizes to be WON!</h4>
+            <h4>Additional prizes to be WON!</h4>
           </div>
         </div>
       </section>
