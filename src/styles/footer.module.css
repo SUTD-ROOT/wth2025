@@ -1,10 +1,8 @@
 .footerWrapper {
     width: 100vw;
     padding: 0 18px 0 18px;
-    margin-bottom: 0rem;
-    margin-top: 100px;
     z-index: 2;
-    height:auto;
+    margin-top: 100vh;
   }
   
   .footerContainer {
@@ -14,7 +12,7 @@
     text-align: left;
     width: 100%;
     position: relative;
-    margin-top: 90vw;
+    margin-bottom: 0;
   }
 
   .footerWrapper2 {
@@ -31,7 +29,6 @@
     text-align: left;
     width: 100%;
     position: relative;
-    margin-top: 3rem;
   }
   
   .footerImg {
@@ -45,6 +42,7 @@
   }
   
   .linkWrapper {
+    position: relative;
     display: flex;
     gap: 8px;
     align-items: flex-end;
@@ -54,8 +52,7 @@
   .footerLink {
     font-size: 0.8rem;
     margin-top: 0.25rem;
-    margin-bottom: 0.25rem;
-    margin: 0;
+    margin: 0px !important;
     text-decoration: underline;
     cursor: pointer;
   }
@@ -64,19 +61,13 @@
   @media only screen and (max-width: 720px) {
     .footerImg {
       width: 13vw;
-      margin-bottom: 0.5rem;
     }
     
     .footerLabel,
     .footerLink {
       font-size: 0.7rem;
-      margin-bottom: 0.8rem;
-    }
 
-    .footerLink {
-      margin-bottom: 4rem;
     }
-
   }
   @media (min-width: 720px) {
     .footerContainer {

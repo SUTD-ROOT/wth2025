@@ -1,10 +1,38 @@
 /* File: src/components/LandingPage.css */
 
+/* Default state - hide the message */
+.mobile-message {
+    width: 90%;
+    display: none;
+    font-size: 18px;
+    color: red; /* Style it to stand out */
+    text-align: center;
+    justify-content: center;
+    padding: 6px;
+    background-color: #fff;
+    border: 1px solid #f00;
+    margin: 20px;
+}
+
+/* Media query to show message only on mobile */
+@media (max-width: 768px) {
+    .mobile-message {
+        display: block; /* Show the message on mobile */
+    }
+    .App{
+      display: none !important;
+    }
+}
+
 .landing-page {
   font-family: 'Arial', sans-serif;
   color: white;
   background: linear-gradient(to bottom, #3d1697, #0f35be);
   height:auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10vh;
+  position: relative;
 }
 
 section {
@@ -13,14 +41,16 @@ section {
 
 /* --- About Section --- */
 .about {
+  margin-top: 30px;
+  width: 80%;
+  align-self: center;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   gap: 2rem;
   color:#fff;
   position: relative;
-  right: 20%;
-  top: 50px;
 }
 
 .about-text {
@@ -33,14 +63,13 @@ section {
 .about-body {
   font-family:Be Vietnam Body;
   font-weight: 50;
-  font-size: 20px;
+  font-size: 1.5vw;
   font-style: normal;
   font-weight: 300;
   line-height: normal;
   letter-spacing:1.2px;
   color:#fff;
-  width: 500px;
-  height: 170px;
+  width: 40vw;
 }
 
 @font-face {
@@ -96,15 +125,12 @@ section {
 }
 
 .about-image {
-  width: 300px;
+  width: 20vw;
   height: auto;
   display: flex;
-  position: absolute;
   align-items: center;
   justify-content: center;
   float: right;
-  margin-left: 600px;
-  margin-top: 140px
 }
 
 
@@ -118,11 +144,14 @@ section {
 }
 
 .theme-grid {
+  width: 100%;
+  align-self: center;
+  margin: 0px 2vw;
   display: flex;
   justify-content: center;
-  gap: 0rem;
   font-family: Neuething Sans Test;
-  font-size: 22px;
+  font-size: 1.5vw;
+  position: relative;
 }
 
 .theme {
@@ -132,17 +161,15 @@ section {
   text-align: center;
   color: black;
   position: relative;
-  right: 10px;
-  top: 140px;
 }
 
 .theme-header {
   position: relative;
   align-items: center;
-  top: 100px;
   text-align: center;
   font-family: Bernoru-BlackUltra_Expanded;
-  font-size: 25px;
+  font-size: 3vw;
+  margin-bottom: 10px;
   color: #FEDD5C;
 }
 
@@ -161,45 +188,50 @@ section {
   background-color: #ec5b68;
   width:350px;
   align-content: center;
+  justify-self: center;
 }
 
 /* --- Timeline --- */
 .timeline {
-  text-align: center;
-  position: absolute;
-  top: 800px;
+  width: 80%;
+  text-align: left;
+  justify-self: center;
+  align-self: center;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 40px;
+  justify-content: flex-end;
+  gap: 5vw;
 }
 
 .timeline-header{
-  position: absolute;
-  align-items: center;
-  top: 1710px;
-  text-align: right;
-  right: 100px;
   font-family: Bernoru-BlackUltra_Expanded;
-  font-size: 25px;
+  text-align: right;
+  justify-self: flex-start;
+  font-size: 2.5vw;
   z-index: 2;
+  position: relative;
 }
 
 .plat-planet{
   position: absolute;
-  right: -120px;
-  top: 790px;
-  width:850px;
+  right: -6.5vw;
+  top:-7vh;
+  width:58vw;
   height:auto;
+  z-index: 0;
 }
 
 .schedule {
   color: white;
   font-family: Be Vietnam Body;
-  padding: 40px;
   line-height: 1.4;
   display: flex;
+  justify-content: flex-start !important;
   flex-direction: column;
-  gap: 40px;
   position: relative;
-  top: 150px;
-  left:80px
 }
 
 .schedule-day {
@@ -218,7 +250,7 @@ section {
 .schedule-events {
   display: flex;
   flex-wrap: wrap;
-  gap: 32px;
+  gap: 1vw;
   align-items: start;
 }
 
