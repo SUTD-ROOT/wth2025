@@ -90,7 +90,7 @@
 }
 
 
-body {
+html, body {
   margin: 0;
   width: 100%;
   overflow-x: hidden;
@@ -236,7 +236,7 @@ a:active {color: var(--theme-purple)}
 }
 
 .right a{
-  color: #FFFFFF;
+  color: #000;
   text-decoration: none;
 }
 
