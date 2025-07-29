@@ -45,7 +45,7 @@
   background: #FEDD5C;
   padding: 10px;
   cursor: pointer;
-  color:#000000;
+  color:#000000 !important;
   font-weight: 600;
   letter-spacing:0.4px;
 }
@@ -191,13 +191,11 @@ code {
   padding: 20px;
   top: 0px;
   background: rgba(61,22,151,1);
-  position: fixed;
+  position: sticky;
   width: 100%;
-  box-sizing: border-box;
   color:#FFF;
   font-family:Inter;
   font-size: 20px
-
 }
 
 .header p{
@@ -258,7 +256,6 @@ a:active {color: var(--theme-purple)}
 }
 
 .banner-image{
-  margin-top: 8vh;
   width: 100%;
   display: flex;
   flex-direction: row;
