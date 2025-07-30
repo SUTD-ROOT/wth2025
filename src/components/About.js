@@ -59,8 +59,9 @@ export const About = () => {
           <h2>About us</h2>
           <div className="about-body">
             <p>
-            WHAT THE HACK is a hardware and software hackathon held by SUTD. Engineers, creators and designers collaborate in a group of 3 - 5 to make innovative solutions to meaningful real-world problems within 3 days.
-          </p>
+              WHAT THE HACK is a hardware and software hackathon held by SUTD. Engineers, creators and designers collaborate in a group of 3 - 5 to make innovative solutions to meaningful real-world problems within 3 days.
+            </p>
+            
           </div>
           <div className="about-info">
             <div className="info-block">
@@ -81,8 +82,6 @@ export const About = () => {
           </div>
         </div>
         <div className="about-image"><img src={photo1} alt="People" className="about-image" /></div>
-
-        
       </section>
       
 
