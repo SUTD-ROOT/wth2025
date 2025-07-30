@@ -103,6 +103,7 @@ html, body {
 }
 
 .Title {
+  margin: 0px;
   color: #FFF;
   text-shadow: 4px 4px 0px rgba(0, 0, 0, 0.25);
   font-size: 4vw;
@@ -124,8 +125,7 @@ html, body {
   font-style: italic;
   font-weight: 600;
   line-height: normal;
-
-  top: 200px;
+  margin: 0px;
 }
 
 .Title3 {
@@ -139,8 +139,7 @@ html, body {
   font-style: normal;
   font-weight: 800;
   line-height: normal;
-
-  top: 300px;
+  margin: 0px;
 }
 
 .Title4 {
@@ -148,7 +147,7 @@ html, body {
   flex-direction: column;
   justify-content: right;
   flex-shrink: 0;
-  width: 482px;
+  margin: 0px;
   color: #FEDD5C;
   font-family: "Be Vietnam";
   font-size: 1.2vw;
@@ -157,7 +156,8 @@ html, body {
   line-height: normal;
 }
 .Title5{
-  margin-top: 20px;
+  margin: 15px 0px;
+  font-size: 1.2vw;
 }
 
 .Title5 a{
@@ -228,6 +228,7 @@ a:active {color: var(--theme-purple)}
 .right{
   display: flex;
   gap: 40px;
+  text-align: center;
   align-items: center;
 }
 
@@ -245,6 +246,7 @@ a:active {color: var(--theme-purple)}
 }
 
 .banner-details{
+  position: absolute;
   background-size: 100%;
   background-image: url('./background1.svg');
   background-position: bottom;
@@ -265,10 +267,12 @@ a:active {color: var(--theme-purple)}
 }
 
 .overlay-text{
-  position: absolute;
-  top: 27vh;
-  right: -30vw;
+  padding: 10vw;
+  justify-self: right;
+  width: 45%;
+  position: relative;
   z-index: 1;
+  gap:10px;
   color: white;
   font-size: 24px;
   font-weight: bold;
@@ -276,6 +280,8 @@ a:active {color: var(--theme-purple)}
   display: flex;
   flex-direction: column;
   align-items: left;
+  align-self: center;
+  justify-content: flex-start;
 }
 
 .frame-container {
@@ -344,9 +350,7 @@ a:active {color: var(--theme-purple)}
 }
 
 .banner_logo{
-  top: 0;
-  left: 0;
-  right:0;   /* 100% of the viewport width */  /* 100% of the viewport height */
+  position: absolute;
   object-fit: cover;
   width: 100%;
   background-color: #3D1697
@@ -361,7 +365,6 @@ a:active {color: var(--theme-purple)}
   background-position: center;
   background-repeat: no-repeat;
   overflow: hidden;
-  
 }
 
 .winners-text{
@@ -958,16 +961,30 @@ button{
 }
 
 @media only screen and (max-width: 720px) {
-  p, .collapse, .input, .submit, .ant-tabs-nav-list, .divider li, .ant-input, .input input, .input textarea, .ant-modal, .ant-btn, .ant-tabs{
+  .expect-grid, h2, p, .info-block, .collapse, .input, .submit, .ant-tabs-nav-list, .divider li, .ant-input, .input input, .input textarea, .ant-modal, .ant-btn, .ant-tabs{
       font-size: 15px !important;
+  }
+
+  .overlay-text{
+    padding: 1vw;
+    gap: 4px;
+
+  }
+
+  .expect-grid{
+    gap: 10px;
+  }
+  .info-block, .info-header{
+    padding: 0% !important;
+    margin: 0% !important;
   }
 
   .ant-tabs{
     margin-left: 10px !important;
   }
 
-  .solution{
-    font-size: 13px;
+  .solution, .theme-grid{
+    font-size: 13px !important;
   }
 
   .bottomdivider, .end{
@@ -982,8 +999,12 @@ button{
     width: 100px;
   }
 
-  .header {
-    padding: 10px;
+  .header, .Title5 a , .expect-box{
+    padding: 10px !important;
+  }
+
+  .expect h2{
+    margin: 10px;
   }
 
   .logo{
@@ -1045,8 +1066,8 @@ button{
     width: 80%;
   }
 
-  .question, .full{
-    width: 90%;
+  .question, .full , .about-image{
+    width: 90% !important;
   }
 
   .bottomdivider{
@@ -1064,6 +1085,12 @@ button{
     width: 100%;
     gap: 6px;
     justify-content: flex-end;
+  }
+
+  .overlay-text{
+    padding: 2px;
+    gap: 2px;
+
   }
 
   .middle{

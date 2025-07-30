@@ -4,9 +4,7 @@ const Banner = () => {
 return (
   <div>
     <div classname='banner' style={{ position: 'relative' }}>
-      <div className='banner-image'>
         <img className='banner_logo' src={background1} alt="banner" />
-      </div>
       <div className= 'overlay-text'>
         <p className="Title">WHAT THE HACK 2025</p>
         <p className="Title2">Dream big, Hack bigger</p>
