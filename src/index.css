@@ -267,10 +267,9 @@ a:active {color: var(--theme-purple)}
 }
 
 .overlay-text{
-  top: auto;
+  padding: 10vw;
   justify-self: right;
   width: 45%;
-  top: 50%;
   position: relative;
   z-index: 1;
   gap:10px;
@@ -366,7 +365,6 @@ a:active {color: var(--theme-purple)}
   background-position: center;
   background-repeat: no-repeat;
   overflow: hidden;
-  
 }
 
 .winners-text{
@@ -967,6 +965,12 @@ button{
       font-size: 15px !important;
   }
 
+  .overlay-text{
+    padding: 1vw;
+    gap: 4px;
+
+  }
+
   .expect-grid{
     gap: 10px;
   }
@@ -1081,6 +1085,12 @@ button{
     width: 100%;
     gap: 6px;
     justify-content: flex-end;
+  }
+
+  .overlay-text{
+    padding: 2px;
+    gap: 2px;
+
   }
 
   .middle{
