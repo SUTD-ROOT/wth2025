@@ -43,6 +43,7 @@ const Contact = () => {
 
     return (
       <div className= "contact-us" style={{background: `url(${seamlessStar}), linear-gradient(to bottom, #3d1697, #0f35be)`,backgroundSize: 'auto'}}>
+        <div className='split'>
         <div className="ask">
           <div className="Ask-header">Got any doubts?</div>
           <div className="Ask-body">
@@ -68,7 +69,7 @@ const Contact = () => {
                 </div>
                 <button className='submit' type="submit">Send</button>
             </form>
-    
+          </div>
                 <ContactModal {...{openModal, setOpenModal, error, errorMsg}}/>
         </div>
         <Footer2/>

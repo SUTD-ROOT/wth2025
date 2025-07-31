@@ -40,12 +40,10 @@ function App() {
           <Banner></Banner>
           <div  ref={up} className='startingpoint'></div>
           <Scrollbtn {...{top}}/>
-          <div>
-            {activeComponent === 'about' && <About />} 
+          {activeComponent === 'about' && <About />} 
             {activeComponent === 'past' && <Past />}  
             {activeComponent === 'faq' && <Faq />}
             {activeComponent === 'contact us' && <Contact />}  
-          </div>
       </div>  
   
          
