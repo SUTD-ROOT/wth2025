@@ -776,11 +776,10 @@ a:active {color: var(--theme-purple)}
 }
 
 .faq-text{
-  margin-top: 6rem;
+  width: 100%;
   color:white;
   font-family: Neuething Sans Test;
   font-size: 30px;
-  padding-left: 4rem
 }
 
 .faq{
@@ -788,9 +787,18 @@ a:active {color: var(--theme-purple)}
   flex-direction: column;
   align-items: left;
   height:auto;
-  padding-right: 4rem
+
 }
 
+.faq-container{
+  position: relative;
+  width: 80%;
+  display: flex;
+  align-self: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
 
 .carousel{
