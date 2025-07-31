@@ -274,7 +274,8 @@ const FAQ = () => {
 
     return ( 
         <div className="faq" style={{background: `url(${seamlessStar}), linear-gradient(to bottom, #3d1697, #0f35be)`, backgroundSize: 'auto'}}>
-            <div className="faq-text">
+            <div className='faq-container'>
+                <div className="faq-text">
                 <p className="intro"><strong>Frequently Asked Questions</strong></p>
                 <div className="question">
                     <ConfigProvider
@@ -300,6 +301,7 @@ const FAQ = () => {
                 </div>
             </div>
             <Footer2/>
+            </div> 
         </div>
     );
 }
