@@ -58,17 +58,23 @@
    display: flex;
    flex-wrap: wrap;
    gap:1rem;
-   padding: 3rem 0;
    width: 100%;
    align-items: flex-start;
    padding-bottom:0rem;
+   flex-direction: row;
+   justify-content: center;
 }
 
-.ask{
-  padding: 20px;
-  padding-left: 6rem;
-  flex: 1 1 300px;
-  margin-top: 5rem;
+.contact{
+  width: 50%;
+}
+
+.split{
+  width: 80%;
+  gap: 2vw;
+  position: relative;
+  display: flex;
+  flex-direction: row;
 }
 
 .Ask-body{
@@ -86,7 +92,10 @@
 }
 
 .rocket{
-  margin-top: -4rem
+  width: 50%;
+  display: flex;
+  align-self: center;
+  justify-self: center;
 }
 
 
@@ -804,13 +813,6 @@ a:active {color: var(--theme-purple)}
   font-size: 30px;
 }
 
-.contact{
-  flex: 1 2 150px;
-  padding-right: 3rem;
-  padding-left: 3rem;
-  margin-top: 5rem;
-}
-
 .individual, .input, .submit{
   font-family: Be Vietnam;
   font-size: 20px;
@@ -927,6 +929,7 @@ button{
 
 
 .form, .input{
+  width: 100%;
   display: flex;
   flex-direction: column;
   text-align: left;
@@ -963,6 +966,14 @@ button{
 @media only screen and (max-width: 720px) {
   .expect-grid, h2, p, .info-block, .collapse, .input, .submit, .ant-tabs-nav-list, .divider li, .ant-input, .input input, .input textarea, .ant-modal, .ant-btn, .ant-tabs{
       font-size: 15px !important;
+  }
+  
+  .split{
+    flex-direction: column;
+  }
+
+  .contact{
+    width: 100%;
   }
 
   .overlay-text{
@@ -1015,7 +1026,7 @@ button{
     gap: 7px;
   }
 
-  .intro, .contact{
+  .intro{
     width: 80%;
   }
 
@@ -1043,9 +1054,6 @@ button{
   .border{
     width: 70px;
     border: 3px solid;
-  }
-  .contact{
-    width: 70%;
   }
   .other{
     width: 60%;
