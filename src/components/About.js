@@ -155,7 +155,7 @@ export const About = () => {
             <h3>Fablab</h3>
             <ul>
               <li>Electronics Lab</li>
-              <ul>
+              <ul className="inner">
                 <li>Soldering Station</li>
                 <li>Wire Stripper</li>
                 <li>Voltage Meter</li>
@@ -166,7 +166,7 @@ export const About = () => {
               <li>3D Printer</li>
               <li>Laser Cutter</li>
               <li>Tools</li>
-              <ul>
+              <ul  className="inner">
                 <li>Screw Driver</li>
                 <li>Pen Knife</li>
                 <li>Clamper</li>

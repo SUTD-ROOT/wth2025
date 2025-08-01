@@ -16,6 +16,79 @@
 
 /* Media query to show message only on mobile */
 @media (max-width: 768px) {
+  .expect-grid{
+        grid-template-columns: repeat(auto-fit, 22.5vw) !important;
+  }
+  .expect-box h3{
+    margin: 0px !important;
+  }
+  .expect ul, .expect h4{
+    margin: 2px 0px !important;
+    font-size: 6px !important;
+    letter-spacing: 1px !important;
+  }
+  .expect ul{
+        padding-left: 20px !important;
+  }
+  .expect ul ul{
+    list-style: none !important;
+    padding-left: 2px !important;
+  }
+
+  .expect ul ul li::before {
+    content: "-";
+    margin-right: 0.5em;
+}
+  .expect-box{
+    padding: 5px !important;
+  }
+  .silver-planet{
+    width: 400px !important;
+    top: -40px !important; 
+  }
+  .expect{
+    top: 0px !important;
+  }
+  .gold-planet{
+    left: -100px !important;
+    top: 10px !important;  
+  }
+  .about-info{
+    margin: 0px !important;
+  }
+  .info-block{
+    text-align: center !important;
+  }
+  
+  .info-header{
+    height: auto !important;
+  }
+  .info-header p{
+    margin: 0px !important;
+  }
+  .expect h2{
+    margin-bottom: 5px !important;
+  }
+  .timeline{
+    gap: 0px !important;
+  }
+  .schedule-event{
+    padding-left: 5px !important;
+  }
+  .schedule-date{
+    font-size: 15px !important;
+  }
+
+  .schedule-event{
+    gap:0px !important;
+  }
+
+  .schedule-day{
+    margin-bottom: 0px !important;
+  }
+  .event-time, .event-activity{
+     font-size: 12px !important;
+  }
   .about{
     flex-direction: column !important;
   }
@@ -313,7 +386,6 @@ section {
 .gold-planet {
   position: absolute;
   left: -15vw;
-  width: 800px;
   height: auto;
   z-index: 0;
 }
