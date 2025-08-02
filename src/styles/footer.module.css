@@ -62,7 +62,7 @@
 
   @media only screen and (max-width: 720px) {
     .footerImg {
-      width: 13vw;
+      width: 13vw !important;
     }
     
     .footerLabel,
@@ -70,21 +70,20 @@
       font-size: 0.7rem;
 
     }
-  }
-  @media (min-width: 720px) {
-    .footerContainer {
-        padding: 0 32px 0 32px;
+
+    .footerWrapper {
+        padding: 0 0px 10px 0px !important;
 
     }
     .footerImg {
       width: 10vw;
-      margin-bottom: 1rem;
+      margin-bottom: 0rem !important;
     }
   
     .footerLabel,
     .footerLink {
       font-size: 1rem;
-      margin-bottom: 0.5rem;
+      margin-bottom: 0rem !important;
     }
 
     .footerLink {
@@ -108,7 +107,6 @@
     }
     .footerWrapper {
       width: 100vw;
-      padding: 0px;
     }
   }
   

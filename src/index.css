@@ -972,6 +972,13 @@ button{
 }
 
 @media only screen and (max-width: 720px) {
+  .sponsor-header {
+    margin-top: 25vw !important;
+  }
+  
+  .bottom-image {
+    margin-top: -140px !important;
+  }
   .expect-grid, h2, p, .info-block, .collapse, .input, .submit, .ant-tabs-nav-list, .divider li, .ant-input, .input input, .input textarea, .ant-modal, .ant-btn, .ant-tabs{
       font-size: 15px !important;
   }
