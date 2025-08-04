@@ -23,7 +23,6 @@ const Navbar = ({handleScroll}) => {
                 </div>
                 <div className="right">
                     <p onClick={() => handleScroll("about")}>About</p>
-                    <p onClick={() => handleScroll("past")}>Past Winners</p>
                     <p onClick={() => handleScroll("faq")}>FAQ</p>
                     <p className="contact-button"><a href="https://forms.office.com/r/izxPR7qcrg" target="_blank">Sign Up</a></p>
                     <p onClick={() => handleScroll("contact us")} className="contact-button">Contact Us</p>
